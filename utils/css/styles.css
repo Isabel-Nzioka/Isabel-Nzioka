@@ -1,0 +1,13 @@
+body {
+  background-color: cadetblue;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  color: red;
+}
+
+img {
+  width: 500px;
+  height: auto;
+}
