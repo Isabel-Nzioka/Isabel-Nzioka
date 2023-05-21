@@ -8,13 +8,87 @@
 
     {{!-- <Link rel="icon" href="/utils/images/weather.png"/> --}}
     <link rel="stylesheet" href="/css/styles.css" />
-    <script src="/js/app.js"></script>
+   
   </head>
   <body>
-        {{>header}}
-    <h1>{{forecast}}</h1>
+        {{!-- {{>header}} --}}
+<div class='TodayMain'>
+  <div class='Today'>
+     <form>
+        <input type="text"  placeholder="location"/>
+        <button>SEarch</button>
+    </form>
+
+    <div class='TodayForecast'>
+     
+      <h1 class='NowForecast'>21</h1>
+       <h3>21, March</h3>
+      <p>Nairobi <p>
+        <p>sunny</p>
+        <p>Feels like </p>
+        <p>Humidity </p>
+      </div>
+    </div>
+
+<div class='TodayHours'>
+ <div class='Hours'>
+    <p> 9AM </p>
+    </hr>
+    <p>Icon</p>
+    <p>10.C </p>
+ </div>
+  <div class='Hours'>
+     <p> 9AM </p>
+      </hr>
+       <p>Icon</p>
+       <p>10.C </p>
+  </div>
+   <div class='Hours'>
+     <p> 9AM </p>
+      </hr>
+      <p>Icon</p>
+      <p>10.C </p>
+   </div>
+    <div class='Hours'>
+       <p> 9AM </p>
+        </hr>
+        <p>Icon</p>
+        <p>10.C </p>
+    </div>
+     <div class='Hours'>
+       <p> 9AM </p>
+      </hr>
+      <p>Icon</p>
+      <p>10.C </p>
+     </div>
+      <div class='Hours'>
+         <p> 9AM </p>
+        </hr>
+        <p>Icon</p>
+        <p>10.C </p>
+      </div>
 
 
-    {{>footer}}
+
+
+
+  </div>
+
+
+
+
+
+</div>
+
+  <div class='WeekForecast'>
+    <div class='Day'>Day </div>
+    <div class='Day'>Day </div>
+     <div class='Day'>Day </div>
+      <div class='Day'>Day </div>
+    </div>
+
+
+    {{!-- {{>footer}} --}}
+     <script src="/js/app.js"></script>
   </body>
 </html> 

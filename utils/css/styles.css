@@ -1,13 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: cadetblue;
-  text-align: center;
+  /* background-color: cadetblue; */
+  /* text-align: center; */
+
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'PT Serif', serif;
+  color: #E3F2C1;
 }
 h1 {
   font-size: 3rem;
-  color: red;
+  color: #F1F6F9;
+  font-family: 'PT Serif', serif;
 }
 
-img {
-  width: 500px;
-  height: auto;
+form {
+  font-size: 1rem;
+  padding-bottom: 2rem;
+}
+input {
+  padding: .8rem 1rem;
+  outline: none;
+  font-size: inherit;
+  color: #ccc
+}
+
+button {
+  font-size: inherit;
+  padding: .8rem 1rem;
+  outline: none;
+}
+
+.NowForecast {
+
+  font-size: 7rem;
+}
+
+
+.TodayMain {
+  padding: 2rem;
+  /* background-color: yellow; */
+
+  display: flex;
+
+  height: 70vh
+ 
+}
+.Today {
+  /* background-color: #ccc; */
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+
+  width: 30%
+}
+
+.TodayHours {
+  flex: 1;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem
+
+}
+
+.Hours {
+  background-color: rgba(0,0,0, 0.2);
+  align-self: flex-start;
+  padding: 3rem 1rem;
+  width: 100%
+  /* height: 10vh; */
+ 
+
+}
+
+.WeekForecast {
+  display: flex;
+gap: 2rem
+}
+
+.Day {
+  width: 100%;
+  padding: 3rem 1rem 5rem;
+  background-color: rgba(0,0,0, 0.2);
+  align-self: flex-end;
 }

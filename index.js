@@ -31,25 +31,29 @@ app.get("/weather", (req, res) => {
       error: "You Must provide an address",
     });
   }
-
-  geocode(req.query.address, (error, { latitude, longitude, location }) => {
-    if (error) {
-      return res.send({ error });
-    }
-
-    forecast(latitude, longitude, (error, forecastData) => {
+  geocode(
+    req.query.address,
+    (error, { latitude, longitude, location } = {}) => {
       if (error) {
         return res.send({ error });
       }
+      forecast(latitude, longitude, (error, forecastData) => {
+        if (error) {
+          return res.send({ error });
+        }
 
-      res.send({
-        forecast: forecastData.weatherList[0],
-        // forecastlist: forecastData.weatherList[0],
-        location,
-        address: req.query.address,
+     
+
+
+  
+        res.send({
+          forecast: forecastData.weatherList,
+          location,
+          address: req.query.address,
+        });
       });
-    });
-  });
+    }
+  );
   // res.render("weather", {
   //   forecast: "About Weather App",
   //   name: "Isabel Nzioka",
